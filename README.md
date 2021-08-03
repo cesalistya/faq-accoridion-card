@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Dekstop](./images/Frontend Mentor (1).png)
+![Dekstop](./images/Frontend Mentor (1).png),
 ![Mobile](./images/Frontend Mentor .png)
 
 ### Links
@@ -38,6 +38,21 @@ Users should be able to:
 
 ## My process
 
+Mobile-view:
+
+  - Layout questions and answers.
+  - Layout images using CSS --background-image.
+  - Adjust layout for different screen sizes using    media-queries.
+
+Desktop-view:
+
+- Change accordion layout to 'landscape' style layout.
+- Display desktop-svgs using CSS syntax for multiple-backgrounds.
+
+Hide show answers:
+
+- Use JS to toggle CSS-class.show-text which hides/shows answer elems and applies increased font-weight to clicked-questions.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -45,51 +60,46 @@ Users should be able to:
 - Flexbox
 - Javascript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The most valuable experience I gained from this project was working with svgs and implementing them using the background-image property. Towards the end of the project while working on desktop-views for the project I discovered the CSS syntax for applying multiple background-images to a single element and this helped greatly.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section id="images-card">
+        <div class="bg-desktop-and-mobile"></div>
+        <div class="bg-shadow"></div>
+</section>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.bg-desktop-and-mobile {
+  background-image: url(./images/illustration-box-desktop.svg),
+    url(./images/bg-pattern-desktop.svg),
+    url(./images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left, center, center;
+  background-size: 12.188rem, 30.313rem 42.813rem, 30.313rem;
+  position: relative;
+  top: 0;
+  left: -6rem;
+  width: 31.875rem;
+  height: 30.313rem;
+}
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I will further improve my skills in CSS and Javascript.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS Multiple Background Images (W3 Schools Website)](https://www.w3schools.com/Css/css3_backgrounds.asp) - This is a useful resource for the CSS syntax for applying multiple background-images to a single element.
+- [Javascript DOM event toggle](https://www.w3schools.com/howto/howto_css_switch.asp) - This is an amazing article which helped me finally understand event toggle to manipulate HTML.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@cesalistya](https://www.frontendmentor.io/profile/cesalistya)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
