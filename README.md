@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Dekstop](./images/Frontend Mentor (1).png),
-![Mobile](./images/Frontend Mentor .png)
+![](./images/screenshoot-dekstop-view.png)
+![](./images/screenshoot-mobile-view.png)
 
 ### Links
 
